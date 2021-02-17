@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="calc-container">
+            <form action="/action_page.php">
+                <label for="amount">Bill Amount</label>
+                <input type="number" id="amount" name="amount">
+                
+                <label for="quality">Quality of Service</label>
+
+                <select name="quality" id="quality">
+                    <option value="select-option" >Select Option</option>
+                    <option value="excellent" >Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+                <div class="btns-container">
+                    <button id="btn" type="button">submit</button>
+                    <button id="reset" type="button">reset</button>
+                </div>
+            </form>
+            <div class="tipTotal-container">
+                <div id="error-message"></div>
+                <div id="tip-amount">Tip Amount:</div>
+                <div id="total">Total:</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
